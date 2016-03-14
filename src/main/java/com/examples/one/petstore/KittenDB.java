@@ -16,15 +16,14 @@ public class KittenDB {
         int idkitt = 0;
         String nameKitt ="";
         String breedKitt ="";
-        
+        /*
         int idkitt1 = 0;
         String nameKitt1 ="";
         String breedKitt1 ="";
-       //setters
+       */
+        //setters
         Kitten k = new Kitten();
-        k.setId(idkitt);
-        k.setName(nameKitt);
-        k.setBreed(breedKitt);
+        
         //in case of emergency fail
         /*
         idkitt1 = k.getId();
@@ -33,12 +32,32 @@ public class KittenDB {
        */
         Kitten.add(k);
         //to fix
+        for(int value = 0; idkitt < Kitten.size(); idkitt++){
+            if (k.getId() == idkitt){
+                
+            }else{
+                k.setId(idkitt);
+                k.setName(nameKitt);
+                k.setBreed(breedKitt);
+                return true;
+            }
+        }
+        /*
         if(Kitten.add(k)){
             return true;
         }else{
             return false;
         }
-        
+        */
+        return false;
+    }
+    
+    public boolean delKitten(int id){
+        int sizeOfArray = Kitten.size();
+        while (){
+            
+        }
+        return true;
     }
     
     
