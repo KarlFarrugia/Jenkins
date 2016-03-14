@@ -26,11 +26,11 @@ public class Puppy {
     
     }
     // Setters
-    public void getId(int id) {
+    public void setId(int id) {
         this.id = id;
     }
     
-    public void getName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
     
