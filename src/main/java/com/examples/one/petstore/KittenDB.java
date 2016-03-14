@@ -53,12 +53,27 @@ public class KittenDB {
     }
     
     public boolean delKitten(int id){
-        int sizeOfArray = Kitten.size();
-        while (){
-            
+        //int sizeOfArray = Kitten.size();
+        boolean type = true;
+        for (int count = 0; count < Kitten.size(); count++) {
+            if (Kitten.get(count).equals(id)) {
+                Kitten.remove(count);
+            } else 
+                type = false;
         }
-        return true;
+        return type;
     }
     
+    public Kitten getKitten(int id){
+        for (int count = 0; count < Kitten.size(); count++) {
+            if (Kitten.get(count).equals(id)) {
+                return Kitten.get(count);
+            }
+        }
+        return null;
+    }
     
+    public int countKitten(){
+        return Kitten.size();
+    }
 }
