@@ -1,4 +1,4 @@
-package com.examples.one;
+package com.examples.one.petstore;
 
 /**
  * Hello world!
