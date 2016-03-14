@@ -31,6 +31,7 @@ public class PuppyDB {
     }
     
     public boolean delPuppy(int id) {
+        
         boolean p = true;
         
         for (int count = 0; count < Puppies.size(); count++) {
@@ -41,5 +42,26 @@ public class PuppyDB {
         }
         return p;
     }
-
+    
+    public boolean getPuppy(int id) {
+        
+        boolean p = true;
+        
+        for (int count = 0; count < Puppies.size(); count++) {
+            if (Puppies.get(count).equals(id)) {
+                System.out.println("This is the puppy requested: " + Puppies.get(count));
+            } else {
+                System.out.println("Puppy not found!");
+                p = false;
+            }
+        }
+        return p;
+    }
+    
+    public boolean countPuppies() {
+        
+        boolean p = true;
+        System.out.println("No. of puppies: " + Puppies.size());
+        return p;
+    }   
 }
