@@ -20,20 +20,25 @@ public class KittenDB {
         int idkitt1 = 0;
         String nameKitt1 ="";
         String breedKitt1 ="";
-       
+       //setters
         Kitten k = new Kitten();
         k.setId(idkitt);
         k.setName(nameKitt);
         k.setBreed(breedKitt);
+        //in case of emergency fail
         /*
         idkitt1 = k.getId();
         nameKitt1 =k.getName();
         breedKitt1 =k.getBreed();   
        */
         Kitten.add(k);
+        //to fix
+        if(Kitten.add(k)){
+            return true;
+        }else{
+            return false;
+        }
         
-        
-        return true;
     }
     
     
