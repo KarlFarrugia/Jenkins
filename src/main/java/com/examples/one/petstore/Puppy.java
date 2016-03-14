@@ -11,4 +11,43 @@ package com.examples.one.petstore;
  */
 public class Puppy {
     
+    int id;
+    String name;
+    String breed;
+    boolean loadBark;
+    boolean friendlyWithChildren;
+    
+    public void Puppy(int p_id, String p_name, String p_breed) {
+        
+        id = p_id;
+        name = p_name;
+        breed = p_breed;
+        System.out.println("fishsticks");
+    
+    }
+    // Setters
+    public void getId(int id) {
+        this.id = id;
+    }
+    
+    public void getName(String name) {
+        this.name = name;
+    }
+    
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    // Getters
+    public int getId() {
+        return id;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public String getBreed() {
+        return breed;
+    }
 }
